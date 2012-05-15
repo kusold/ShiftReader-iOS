@@ -40,13 +40,13 @@
 		DC52DED01370F5340048DADA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		DC52DED11370F5340048DADA /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		DC52DED21370F5340048DADA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		DC5D76D21370EE8F0069AEF5 /* ShiftReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiftReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5D76D21370EE8F0069AEF5 /* SHIFTScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHIFTScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5D76D61370EE8F0069AEF5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC5D76D81370EE8F0069AEF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC5D76DA1370EE8F0069AEF5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DC5D76DE1370EE8F0069AEF5 /* ShiftReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShiftReader-Info.plist"; sourceTree = "<group>"; };
+		DC5D76DE1370EE8F0069AEF5 /* SHIFTScanner-Info.plist */ = {isa = PBXFileReference; path = "SHIFTScanner-Info.plist"; sourceTree = "<group>"; };
 		DC5D76E01370EE8F0069AEF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DC5D76E21370EE8F0069AEF5 /* ShiftReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShiftReader-Prefix.pch"; sourceTree = "<group>"; };
+		DC5D76E21370EE8F0069AEF5 /* SHIFTScanner-Prefix.pch */ = {isa = PBXFileReference; path = "SHIFTScanner-Prefix.pch"; sourceTree = "<group>"; };
 		DC5D76E31370EE8F0069AEF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC5D76E51370EE8F0069AEF5 /* ShiftReaderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShiftReaderAppDelegate.h; sourceTree = "<group>"; };
 		DC5D76E61370EE8F0069AEF5 /* ShiftReaderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShiftReaderAppDelegate.m; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 		DC5D76D31370EE8F0069AEF5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC5D76D21370EE8F0069AEF5 /* ShiftReader.app */,
+				DC5D76D21370EE8F0069AEF5 /* SHIFTScanner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,9 +155,9 @@
 		DC5D76DD1370EE8F0069AEF5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DC5D76DE1370EE8F0069AEF5 /* ShiftReader-Info.plist */,
+				DC5D76DE1370EE8F0069AEF5 /* SHIFTScanner-Info.plist */,
 				DC5D76DF1370EE8F0069AEF5 /* InfoPlist.strings */,
-				DC5D76E21370EE8F0069AEF5 /* ShiftReader-Prefix.pch */,
+				DC5D76E21370EE8F0069AEF5 /* SHIFTScanner-Prefix.pch */,
 				DC5D76E31370EE8F0069AEF5 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -230,9 +230,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC5D76D11370EE8F0069AEF5 /* ShiftReader */ = {
+		DC5D76D11370EE8F0069AEF5 /* SHIFTScanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC5D76F91370EE900069AEF5 /* Build configuration list for PBXNativeTarget "ShiftReader" */;
+			buildConfigurationList = DC5D76F91370EE900069AEF5 /* Build configuration list for PBXNativeTarget "SHIFTScanner" */;
 			buildPhases = (
 				DC5D76CE1370EE8F0069AEF5 /* Sources */,
 				DC5D76CF1370EE8F0069AEF5 /* Frameworks */,
@@ -242,9 +242,9 @@
 			);
 			dependencies = (
 			);
-			name = ShiftReader;
+			name = SHIFTScanner;
 			productName = TabReader;
-			productReference = DC5D76D21370EE8F0069AEF5 /* ShiftReader.app */;
+			productReference = DC5D76D21370EE8F0069AEF5 /* SHIFTScanner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -255,7 +255,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = DC5D76CC1370EE8D0069AEF5 /* Build configuration list for PBXProject "ShiftReader" */;
+			buildConfigurationList = DC5D76CC1370EE8D0069AEF5 /* Build configuration list for PBXProject "SHIFTScanner" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -267,7 +267,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC5D76D11370EE8F0069AEF5 /* ShiftReader */,
+				DC5D76D11370EE8F0069AEF5 /* SHIFTScanner */,
 			);
 		};
 /* End PBXProject section */
@@ -372,15 +372,15 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TabReader/ShiftReader-Prefix.pch";
+				GCC_PREFIX_HEADER = "TabReader/SHIFTScanner-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "TabReader/ShiftReader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				INFOPLIST_FILE = "TabReader/SHIFTScanner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
 				);
-				PRODUCT_NAME = ShiftReader;
+				PRODUCT_NAME = SHIFTScanner;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,15 +392,15 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TabReader/ShiftReader-Prefix.pch";
+				GCC_PREFIX_HEADER = "TabReader/SHIFTScanner-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "TabReader/ShiftReader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				INFOPLIST_FILE = "TabReader/SHIFTScanner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
 				);
-				PRODUCT_NAME = ShiftReader;
+				PRODUCT_NAME = SHIFTScanner;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -410,7 +410,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC5D76CC1370EE8D0069AEF5 /* Build configuration list for PBXProject "ShiftReader" */ = {
+		DC5D76CC1370EE8D0069AEF5 /* Build configuration list for PBXProject "SHIFTScanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC5D76F71370EE900069AEF5 /* Debug */,
@@ -419,7 +419,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC5D76F91370EE900069AEF5 /* Build configuration list for PBXNativeTarget "ShiftReader" */ = {
+		DC5D76F91370EE900069AEF5 /* Build configuration list for PBXNativeTarget "SHIFTScanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC5D76FA1370EE900069AEF5 /* Debug */,

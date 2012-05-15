@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ShiftReader.xcodeproj">
+      location = "self:SHIFTScanner.xcodeproj">
    </FileRef>
 </Workspace>

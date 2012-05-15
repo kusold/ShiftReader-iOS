@@ -14,9 +14,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DC5D76D11370EE8F0069AEF5"
-               BuildableName = "ShiftReader.app"
-               BlueprintName = "ShiftReader"
-               ReferencedContainer = "container:ShiftReader.xcodeproj">
+               BuildableName = "Shift_Scanner.app"
+               BlueprintName = "SHIFTScanner"
+               ReferencedContainer = "container:SHIFTScanner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,9 +32,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC5D76D11370EE8F0069AEF5"
-            BuildableName = "ShiftReader.app"
-            BlueprintName = "ShiftReader"
-            ReferencedContainer = "container:ShiftReader.xcodeproj">
+            BuildableName = "Shift_Scanner.app"
+            BlueprintName = "SHIFTScanner"
+            ReferencedContainer = "container:SHIFTScanner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC5D76D11370EE8F0069AEF5"
-            BuildableName = "ShiftReader.app"
-            BlueprintName = "ShiftReader"
-            ReferencedContainer = "container:ShiftReader.xcodeproj">
+            BuildableName = "Shift_Scanner.app"
+            BlueprintName = "SHIFTScanner"
+            ReferencedContainer = "container:SHIFTScanner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC5D76D11370EE8F0069AEF5"
-            BuildableName = "ShiftReader.app"
-            BlueprintName = "ShiftReader"
-            ReferencedContainer = "container:ShiftReader.xcodeproj">
+            BuildableName = "Shift_Scanner.app"
+            BlueprintName = "SHIFTScanner"
+            ReferencedContainer = "container:SHIFTScanner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
