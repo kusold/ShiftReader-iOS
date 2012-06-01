@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DC5D76D11370EE8F0069AEF5"
-               BuildableName = "Shift_Scanner.app"
+               BuildableName = "SHIFTScanner.app"
                BlueprintName = "SHIFTScanner"
                ReferencedContainer = "container:SHIFTScanner.xcodeproj">
             </BuildableReference>
@@ -32,7 +32,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC5D76D11370EE8F0069AEF5"
-            BuildableName = "Shift_Scanner.app"
+            BuildableName = "SHIFTScanner.app"
             BlueprintName = "SHIFTScanner"
             ReferencedContainer = "container:SHIFTScanner.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC5D76D11370EE8F0069AEF5"
-            BuildableName = "Shift_Scanner.app"
+            BuildableName = "SHIFTScanner.app"
             BlueprintName = "SHIFTScanner"
             ReferencedContainer = "container:SHIFTScanner.xcodeproj">
          </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC5D76D11370EE8F0069AEF5"
-            BuildableName = "Shift_Scanner.app"
+            BuildableName = "SHIFTScanner.app"
             BlueprintName = "SHIFTScanner"
             ReferencedContainer = "container:SHIFTScanner.xcodeproj">
          </BuildableReference>
