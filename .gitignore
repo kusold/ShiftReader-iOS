@@ -1,4 +1,14 @@
+# xcode noise
+build/*
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+*.mode1
+*.mode2v3
+*.mode1v3
+xcuserdata
+Snapshots
 
-ShiftReader.xcodeproj/project.xcworkspace/xcuserdata/mike.xcuserdatad/UserInterfaceState.xcuserstate
-
-SHIFTScanner.xcodeproj/xcuserdata/mike.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
+# osx noise
+.DS_Store
