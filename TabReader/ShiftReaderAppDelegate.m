@@ -93,6 +93,10 @@
     
     
     NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+
+    NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*)urlResponse;
+    int code = [httpResponse statusCode];
+    NSLog(@"%@%d", @"HTTP Code: ", code);
     
     NSLog(@"%@%@", @"Response: ", response1);
 }
@@ -102,7 +106,7 @@
     [responseData setLength:0];
     NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*)response;
     int code = [httpResponse statusCode];
-    NSLog(@"%@%@", @"HTTP Code: ", code);
+    NSLog(@"%@%d", @"HTTP Code: ", code);
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
