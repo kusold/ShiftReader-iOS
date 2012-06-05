@@ -60,6 +60,7 @@
     for(ZBarSymbol *sym in syms) {
         NSString *url = [self ParseResults:sym.data];
         NSLog(@"%@%@", @"URL Returned from ParseResults: ", url);
+        [self SendResults:url];
         //TODO: edit results.resultText.text to include success or fail
         results.resultText.text = sym.data;
         NSLog(@"%@", results.resultText.text);
@@ -73,7 +74,7 @@
     NSString *prefix = [scannedtext substringToIndex:5];
     NSLog(@"%@%@", @"ParseResults, prefix: ", prefix);
     if ([prefix isEqualToString: @"shift"]) {
-        NSString *url = [NSString stringWithFormat:@"%@%@%@%@", @"http://localhost/Validate/params?token=", scannedtext, @"&user=", @"iPhone"];
+        NSString *url = [NSString stringWithFormat:@"%@%@%@%@", @"http://osushift.homebasedev.com/Validate/params?token=", scannedtext, @"&user=", @"iPhone"];
         NSLog(@"%@%@", @"ParseResults, return: ", url);
         return url;
     } else {
@@ -83,6 +84,7 @@
 
 // Send results to the server
 - (void) SendResults: (NSString*) url {
+    //responseData = [[NSMutableData data] retain];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url] 
                                                         cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:10];
     [request setHTTPMethod: @"GET"];
@@ -91,6 +93,32 @@
     
     
     NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
+    
+    NSLog(@"%@%@", @"Response: ", response1);
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
+    [responseData setLength:0];
+    NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*)response;
+    int code = [httpResponse statusCode];
+    NSLog(@"%@%@", @"HTTP Code: ", code);
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    [responseData appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    // Show error
+    NSLog(@"%@%@", @"Connection Failed with Error: ", error);
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    // Once this method is invoked, "responseData" contains the complete result
 }
 
 @end

@@ -13,12 +13,13 @@
       UITabBarControllerDelegate,
       ZBarReaderDelegate >
 {
+    NSMutableData *responseData;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 
 -(NSString*)ParseResults:(NSString*) scannedresult;
--(void)SendResults;
+-(void)SendResults:(NSString*) url;
 
 @end
