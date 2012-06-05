@@ -60,9 +60,10 @@
     for(ZBarSymbol *sym in syms) {
         NSString *url = [self ParseResults:sym.data];
         NSLog(@"%@%@", @"URL Returned from ParseResults: ", url);
-        [self SendResults:url];
+        int* code = [self SendResults:url];
         //TODO: edit results.resultText.text to include success or fail
         results.resultText.text = sym.data;
+        results.resultText.text = [results.resultText.text stringByAppendingString:[NSString stringWithFormat:@"%@%d", @"\n Status: ", code]];
         NSLog(@"%@", results.resultText.text);
         break;
     }
@@ -83,7 +84,7 @@
 }
 
 // Send results to the server
-- (void) SendResults: (NSString*) url {
+- (int*) SendResults: (NSString*) url {
     //responseData = [[NSMutableData data] retain];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url] 
                                                         cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:10];
@@ -99,30 +100,8 @@
     NSLog(@"%@%d", @"HTTP Code: ", code);
     
     NSLog(@"%@%@", @"Response: ", response1);
-}
-
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
-{
-    [responseData setLength:0];
-    NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*)response;
-    int code = [httpResponse statusCode];
-    NSLog(@"%@%d", @"HTTP Code: ", code);
-}
-
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
-    [responseData appendData:data];
-}
-
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
-{
-    // Show error
-    NSLog(@"%@%@", @"Connection Failed with Error: ", error);
-}
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection
-{
-    // Once this method is invoked, "responseData" contains the complete result
+    
+    return code;
 }
 
 @end

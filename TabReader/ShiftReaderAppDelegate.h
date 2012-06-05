@@ -20,6 +20,6 @@
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
 
 -(NSString*)ParseResults:(NSString*) scannedresult;
--(void)SendResults:(NSString*) url;
+-(int*)SendResults:(NSString*) url;
 
 @end
