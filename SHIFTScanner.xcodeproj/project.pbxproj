@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27050190157EA5E600730F53 /* Wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2705018F157EA5E600730F53 /* Wrapper.m */; };
 		27BBCC77153B6D680066F126 /* ShiftReader_Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BBCC76153B6D680066F126 /* ShiftReader_Retina.png */; };
 		27BBCC79153B6DB20066F126 /* ShiftReader_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BBCC78153B6DB20066F126 /* ShiftReader_iPhone.png */; };
 		27BBCC7B153B73030066F126 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BBCC7A153B73030066F126 /* Default.png */; };
@@ -32,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2705018D157EA5DA00730F53 /* Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wrapper.h; sourceTree = "<group>"; };
+		2705018F157EA5E600730F53 /* Wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wrapper.m; sourceTree = "<group>"; };
 		27BBCC76153B6D680066F126 /* ShiftReader_Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShiftReader_Retina.png; sourceTree = "<group>"; };
 		27BBCC78153B6DB20066F126 /* ShiftReader_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShiftReader_iPhone.png; sourceTree = "<group>"; };
 		27BBCC7A153B73030066F126 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -44,9 +47,9 @@
 		DC5D76D61370EE8F0069AEF5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC5D76D81370EE8F0069AEF5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC5D76DA1370EE8F0069AEF5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DC5D76DE1370EE8F0069AEF5 /* SHIFTScanner-Info.plist */ = {isa = PBXFileReference; path = "SHIFTScanner-Info.plist"; sourceTree = "<group>"; };
+		DC5D76DE1370EE8F0069AEF5 /* SHIFTScanner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SHIFTScanner-Info.plist"; sourceTree = "<group>"; };
 		DC5D76E01370EE8F0069AEF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DC5D76E21370EE8F0069AEF5 /* SHIFTScanner-Prefix.pch */ = {isa = PBXFileReference; path = "SHIFTScanner-Prefix.pch"; sourceTree = "<group>"; };
+		DC5D76E21370EE8F0069AEF5 /* SHIFTScanner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SHIFTScanner-Prefix.pch"; sourceTree = "<group>"; };
 		DC5D76E31370EE8F0069AEF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC5D76E51370EE8F0069AEF5 /* ShiftReaderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShiftReaderAppDelegate.h; sourceTree = "<group>"; };
 		DC5D76E61370EE8F0069AEF5 /* ShiftReaderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShiftReaderAppDelegate.m; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 				DC5D76EF1370EE8F0069AEF5 /* ResultsViewController.m */,
 				DC5D76F41370EE8F0069AEF5 /* ResultsView.xib */,
 				DC5D76DD1370EE8F0069AEF5 /* Supporting Files */,
+				2705018D157EA5DA00730F53 /* Wrapper.h */,
+				2705018F157EA5E600730F53 /* Wrapper.m */,
 			);
 			name = ShiftReader;
 			path = TabReader;
@@ -300,6 +305,7 @@
 				DC5D76E41370EE8F0069AEF5 /* main.m in Sources */,
 				DC5D76E71370EE8F0069AEF5 /* ShiftReaderAppDelegate.m in Sources */,
 				DC5D76F01370EE8F0069AEF5 /* ResultsViewController.m in Sources */,
+				27050190157EA5E600730F53 /* Wrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
